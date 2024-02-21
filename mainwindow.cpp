@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)  : QMainWindow(parent) , ui(new Ui::Main
     ui->setupUi(this);
     scene = new QGraphicsScene();
     ui -> graphicsView -> setScene(scene);
+
     scene -> addItem(boat);
     scene -> addItem(boat -> Rect_1);
 }
@@ -48,9 +49,7 @@ void MainWindow::on_Sail_down_clicked()
 
 }
 
-void MainWindow::paintEvent(QPaintEvent* event)
-{
-}
+
 
 void MainWindow::on_Sail_up_clicked()
 {
