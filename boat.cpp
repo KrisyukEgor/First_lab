@@ -1,15 +1,16 @@
-#include "board.h"
+#include "boat.h"
 
 
 Boat::Boat()  {
     Rect_1 = new Move_Rect();
     Rect_1 -> Set_Rect();
-    QGraphicsRectItem* Rect_2 = new QGraphicsRectItem(-10,-130,20,130,this);
+
+    Rect_2 = new QGraphicsRectItem(-10,-130,20,130);
 
     QPolygon pol;
     pol << QPoint(-130,0) << QPoint(130,0) << QPoint(70,60) << QPoint(-70,60);
 
-    QGraphicsPolygonItem* Polygon = new QGraphicsPolygonItem(pol,this);
+    Polygon = new QGraphicsPolygonItem(pol);
 
 }
 

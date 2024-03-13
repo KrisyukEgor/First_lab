@@ -5,6 +5,9 @@
 #include <QPalette>
 #include <QPainter>
 #include <QGraphicsScene>
+#include <QCursor>
+#include <QGraphicsEffect>
+#include <QGraphicsPathItem>
 
 
 
@@ -21,6 +24,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    bool once_clicked;
 private slots:
     void on_Sail_up_clicked();
     void on_Sail_down_clicked();
@@ -28,7 +32,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QGraphicsScene* scene;
-
+    virtual void paintEvent(QPaintEvent* ) override;
 
 
 protected:

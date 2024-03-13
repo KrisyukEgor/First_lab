@@ -4,7 +4,6 @@
 #include <QGraphicsRectItem>
 #include <QObject>
 
-
 class Move_Rect: public QGraphicsRectItem, public QObject{
 
 

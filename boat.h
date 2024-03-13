@@ -12,6 +12,8 @@ class Boat : public Move_Rect
 public:
     Move_Rect* Rect_1;
     QTimer* timer;
+    QGraphicsRectItem* Rect_2;
+    QGraphicsPolygonItem* Polygon;
 
 public:
     Boat();
@@ -21,6 +23,7 @@ public:
 
 
 private:
+
 
 };
 
